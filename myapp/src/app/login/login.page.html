@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="mi-toolbar">
+    <ion-buttons slot="secondary">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-content">
+  <ion-content class="ion-padding">
+    <div class="ion-text-center">
+      <h1 style="font-size: 40px;">Ingresar</h1>
+      <p style="font-size: 14px;">Inicie sesión para continuar</p>
+      <div class="logeando">
+        <ion-input  [(ngModel)]="user.usuario" label="CORREO" label-placement="floating" fill="outline" placeholder="@duocuc.cl"></ion-input>
+        <br>
+        <br>
+        <ion-input  [(ngModel)]="user.password" label="CONTRASEÑA" label-placement="floating" fill="outline" placeholder="***********"></ion-input>
+      </div>
+      <br>
+      <a [routerLink]="['/reset-password']">Recuperar contraseña</a>
+      <br>
+      <ion-button [routerLink]="['/feed']" class="boton-ingresar">iniciar sesión</ion-button>
+    </div>
+  </ion-content>
+
+  <div class="triangulo"></div>
+</ion-content>
+
+<ion-footer collapse="fade">
+</ion-footer>
+
+
+
